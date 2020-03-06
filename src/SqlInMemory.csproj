@@ -12,7 +12,7 @@
     <Authors>Mohammad Javad Ebrahimi</Authors>
     <Company>Mohammad Javad Ebrahimi</Company>
     <Copyright>Copyright © Mohammad Javad Ebrahimi 2020</Copyright>
-    <Description>SqlInMemory is a library for create in-memory sql server database</Description>
+    <Description>SqlInMemory is a library for create SqlServer database in memory using virual disk drive. This is useful for integration testing with a faster one-time use database.</Description>
     <PackageTags>InMemory SqlServer Database</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/mjebrahimi/SqlInMemory</PackageProjectUrl>
