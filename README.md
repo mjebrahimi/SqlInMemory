@@ -1,4 +1,4 @@
-[![NuGet](https://img.shields.io/nuget/v/SqlInMemory.svg)](https://www.nuget.org/packages/SqlInMemory/)
+[![NuGet](https://img.shields.io/nuget/v/RamDisk.svg)](https://www.nuget.org/packages/SqlInMemory/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 # SqlInMemory
