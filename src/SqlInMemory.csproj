@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SqlInMemory</AssemblyName>
+    <PackageId>SqlInMemory</PackageId>
+    <Title>SqlInMemory</Title>
+    <Product>SqlInMemory</Product>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Authors>Mohammad Javad Ebrahimi</Authors>
+    <Company>Mohammad Javad Ebrahimi</Company>
+    <Copyright>Copyright © Mohammad Javad Ebrahimi 2020</Copyright>
+    <Description>SqlInMemory is a library for create in-memory sql server database</Description>
+    <PackageTags>InMemory SqlServer Database</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/mjebrahimi/SqlInMemory</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mjebrahimi/SqlInMemory</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="1.1.1" />
+    <PackageReference Include="RamDisk" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
