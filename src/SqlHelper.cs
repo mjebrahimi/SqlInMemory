@@ -1,9 +1,16 @@
-﻿using Microsoft.Data.SqlClient;
+﻿#if NETSTANDARD2_0 || NET461
+using Microsoft.Data.SqlClient;
+#else
+using System.Data.SqlClient;
+#endif
 using System;
 using System.IO;
 
 namespace SqlInMemory
 {
+    /// <summary>
+    /// SqlHelper
+    /// </summary>
     public static class SqlHelper
     {
         /// <summary>
@@ -32,7 +39,7 @@ namespace SqlInMemory
         public static void DropDatabaseAndRecreate(string connectionString, string databaseName = null, string folderPath = null, bool force = false)
         {
             if (DatabaseExists(connectionString, databaseName))
-                DropDatabase(connectionString, databaseName);
+                DropDatabase(connectionString, databaseName, force);
             CreateDatabase(connectionString, databaseName, folderPath);
         }
 
