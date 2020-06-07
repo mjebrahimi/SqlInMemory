@@ -7,7 +7,7 @@
 
 **SqlInMemory** is a library for creating SqlServer database on **Memory** instead of hard disk, at last **Drops and Disposes** database when you're done with it. This is useful for **Integration Testing**.
 
-**Note : This library uses [RamDisk](https://github.com/mjebrahimi/RamDisk) which also uses [ImDisk](http://www.ltr-data.se/opencode.html/#ImDisk) in the backend for creating virtual disk drive. Therefore you have to install imdisk first. [Download link of current stable version 2.0.10](http://www.ltr-data.se/files/imdiskinst.exe)**
+**Note : This library uses [RamDisk](https://github.com/mjebrahimi/RamDisk) which also uses [ImDisk](http://www.ltr-data.se/opencode.html/#ImDisk) in the backend for creating virtual disk drive. Therefore you have to install imdisk first. ([Download link of current stable version 2.0.10](http://www.ltr-data.se/files/imdiskinst.exe))**
 
 ## Get Started
 
