@@ -22,9 +22,17 @@ PM> Install-Package SqlInMemory
 Pass your connection string and it will create (mount) a virtual disk drive 'Z' and create database there finaly when disposed, drop database and unmount drive.
 
 ```csharp
-using (SqlInMemoryDb.Create("Data Source=.;Initial Catalog=TestDb;Integrated Security=true"))
+var connectionString = "Data Source=.;Initial Catalog=TestDb;Integrated Security=true";
+using (SqlInMemoryDb.Create(connectionString))
 {
     //Use database using ADO.NET or ORM
+
+    //For example using EF Core
+    services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionString));
+    var serviceProvider = services.BuildServiceProvider();
+    var appDbContext = serviceProvider.GetService<AppDbContext>();
+    appDbContext.Database.Migrate();
+    //...
 }
 ```
 
