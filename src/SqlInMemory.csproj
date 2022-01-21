@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net40;net45;net461;</TargetFrameworks>
-    <LangVersion>9.0</LangVersion>
+    <LangVersion>latest</LangVersion>
     <AssemblyName>SqlInMemory</AssemblyName>
     <PackageId>SqlInMemory</PackageId>
     <Product>SqlInMemory</Product>
     <Title>SqlInMemory</Title>
-    <Version>1.0.5</Version>
-    <PackageVersion>1.0.5</PackageVersion>
-    <AssemblyVersion>1.0.5</AssemblyVersion>
+    <Version>1.0.6</Version>
+    <PackageVersion>1.0.6</PackageVersion>
+    <AssemblyVersion>1.0.6</AssemblyVersion>
     <Authors>Mohammad Javad Ebrahimi</Authors>
     <Company>Mohammad Javad Ebrahimi</Company>
     <Copyright>Copyright © Mohammad Javad Ebrahimi 2020</Copyright>
@@ -37,7 +37,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
-    <PackageReference Include="RamDisk" Version="1.0.4" />
+    <PackageReference Include="RamDisk" Version="1.0.5" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0' OR '$(TargetFramework)'=='net461'">
